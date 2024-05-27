@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - LapTopia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 100px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .carousel-inner {
+            background: #f9f9f9; /* Lighter background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-inner img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .carousel-caption {
+            position: static;
+            padding: 0;
+            text-align: left;
+            color: #333; /* Darker text color */
+        }
+        .carousel-caption h5 {
+            margin-bottom: 5px;
+        }
+        .carousel-caption p {
+            margin-bottom: 0;
+        }
+        .review-content {
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">LapTopia</a>
+            <a href="index.html" class="filter-category">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="text-center mt-4 mb-4">About LapTopia</h1>
+            <p>LapTopia is your premier destination for exceptional laptops. Offering an extensive selection of top-tier devices from renowned brands such as Dell, Apple, HP, and Lenovo, we cater to the diverse needs of students, professionals, and gaming enthusiasts alike.</p>
+            <p>Our mission is to streamline the process of discovering and acquiring your ideal laptop, ensuring a seamless and gratifying experience. Through our intuitive website and dedicated customer service, we are committed to surpassing your expectations at every turn.</p>
+            <p>At LapTopia, we firmly believe in delivering unparalleled technology at accessible prices. With competitive pricing and regular promotional offers, we guarantee optimal value for your investment.</p>
+            <p>Welcome to LapTopia, where innovation meets affordability. With a commitment to excellence and customer satisfaction, we provide a curated selection of laptops tailored to your needs. Our extensive range includes laptops for every purpose, from productivity to entertainment, ensuring that you find the perfect device to suit your lifestyle.</p>
+            <p>Experience the convenience of shopping with LapTopia. Our user-friendly platform and knowledgeable support team are here to assist you at every step of your journey. Whether you're a student in search of a reliable study companion or a professional seeking a powerhouse for work, we have you covered.</p>
+            <p>Join the LapTopia community today and unlock a world of possibilities. Stay updated on the latest tech trends, exclusive offers, and expert insights. With LapTopia, your satisfaction is our priority. Discover your ideal laptop and elevate your computing experience with us.</p>
+        </div>
+
+        <!-- Customer Reviews Section -->
+        <div id="customerReviews" class="container mt-5 mb-5">
+            <h2 class="text-center mb-4">What Our Customers Say</h2>
+            <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="review-content">
+                            <img src="images/customerone.webp" alt="Customer 1">
+                            <div class="carousel-caption">
+                                <h5>Julia</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <p>Excellent service and amazing products. Highly recommended!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-content">
+                            <img src="images/customertwo.webp" alt="Customer 2">
+                            <div class="carousel-caption">
+                                <h5>Jane Smith</h5>
+                                <p>⭐⭐⭐⭐</p>
+                                <p>Great prices and fast delivery. Will definitely shop here again.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-content">
+                            <img src="images/customerthree.webp" alt="Customer 3">
+                            <div class="carousel-caption">
+                                <h5>Emily Johnson</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <p>The best laptop shopping experience I've ever had. Fantastic customer support!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LapTopia. All rights reserved. Phone: +447482320077 | Email: support@laptopia.com | Address: M16 0PU United Kingdom</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

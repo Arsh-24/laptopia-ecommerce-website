@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LapTopia - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="particle-background"></div>
+    <header>
+        <nav class="navbar">
+            <a href="index.html"><i class="fas fa-home"></i> LapTopia</a>
+            <div>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="cart.html" id="cart-button"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="parallax">
+            <div class="animate-typing">
+                <h1>Welcome to LapTopia!</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="brand-filter">
+                <a href="#" class="filter-category" data-category="all">All</a>
+                <a href="#" class="filter-category" data-category="dell">Dell</a>
+                <a href="#" class="filter-category" data-category="apple">Apple</a>
+                <a href="#" class="filter-category" data-category="hp">HP</a>
+                <a href="#" class="filter-category" data-category="lenovo">Lenovo</a>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <select id="sort-options" class="form-control mb-4">
+                        <option value="default">Sort By</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+            <div id="featured" class="row">
+              
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="path/to/image.jpg" class="card-img-top" alt="Product Name">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Name</h5>
+                            <p class="card-text">Product Description</p>
+                            <p class="card-text">$999.99</p>
+                            <button class="btn btn-primary add-to-cart"
+                                    data-image="path/to/image.jpg"
+                                    data-name="Product Name"
+                                    data-description="Product Description"
+                                    data-price="$999.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 LapTopia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

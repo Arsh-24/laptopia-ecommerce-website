@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LapTopia - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Additional Styles for Checkout Page */
+        .checkout-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .checkout-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+        }
+        .checkout-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .checkout-button:hover {
+            background-color: #218838;
+        }
+        .animation-container {
+            text-align: center;
+            margin-top: 20px;
+            display: none;
+        }
+        .confirmation-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">LapTopia</a>
+            <a href="index.html" class="filter-category">Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="checkout-container">
+            <h2 class="checkout-title">Checkout</h2>
+            <form id="checkout-form">
+    
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea class="form-control" id="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="card">Credit Card Number</label>
+                    <input type="text" class="form-control" id="card" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry">Expiration Date</label>
+                    <input type="text" class="form-control" id="expiry" placeholder="MM/YYYY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" required>
+                </div>
+                <button type="submit" class="checkout-button">Place Order</button>
+            </form>
+            <div class="animation-container">
+                <p id="verification-message">Verifying your online payment...</p>
+            </div>
+            <div class="confirmation-container">
+                <p>Your payment has been verified.</p>
+                <p>An email confirmation has been sent. You can track your order there.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Display the animation
+            document.querySelector('.animation-container').style.display = 'block';
+
+            //payment verification
+            setTimeout(function() {
+               
+                document.querySelector('.animation-container').style.display = 'none';
+
+                // Show the confirmation message
+                document.querySelector('.confirmation-container').style.display = 'block';
+
+                // Hide the form
+                document.getElementById('checkout-form').style.display = 'none';
+            }, 3000); 
+        });
+    </script>
+</body>
+</html>

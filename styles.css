@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header .navbar a:hover {
+    color: #ff7f50;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+/* Parallax Background DISCARDED NOT BEING USED */
+.parallax {
+    background-image: url('images/parallax-bg.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+/* Typing Animation */
+.animate-typing {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px #fff;
+}
+
+
+/* Product Cards */
+.product-card {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card .card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+    overflow: hidden; 
+    height: 100%;
+}
+
+.product-card:hover .card {
+    transform: scale(1.05); /* Zoom effect */
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+    transform: scale(1.1); /* Zoom effect on the image */
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    justify-content: space-between; 
+}
+
+.product-card .card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.product-card .card-text {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.product-card .price {
+    width: 100%; 
+    text-align: center; 
+    font-size: 1.1em; 
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+.product-card .btn-add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.product-card .btn-add-to-cart:hover {
+    background-color: #218838;
+}
+
+
+/* Cart Styles */
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity .form-control {
+    text-align: center;
+}
+
+.quantity .btn {
+    margin: 0 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Particle Animation DISCARDED NOT BEING USED */
+.particle-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-100px) translateX(20px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Brand Filter */
+.brand-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand-filter a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.brand-filter a:hover {
+    color: #0056b3;
+}
+
+.product-card .btn-add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.product-card .btn-add-to-cart:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
